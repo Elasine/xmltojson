@@ -7,7 +7,7 @@ import codecs
 
 # VEDAI 图像存储位置
 vhr_img_dir = "JPEGImages"
-# VEDAI 图像�?ground truth �?txt 文件存放位置
+# VEDAI 图像ground truth txt 文件存放位置
 vhr_txt_dir = "ground-truth"
 vhr_xml_dir = "annotations"
 
@@ -70,7 +70,7 @@ for img in img_names:
                 line = (((line.replace('(', '')).replace(')', '')).replace('(', '')).replace(')', '')
                 line = map(str, line)
                 line = ''.join(line)
-                spt = line.strip().split(',')  # 这里如果txt里面是以逗号‘，’隔开的，那么就改为spt = img_each_label.split(',')�?                if (spt[4] == str(0)):
+                spt = line.strip().split(',')  # 这里如果txt里面是以逗号‘，’隔开的，那么就改为spt = img_each_label.split(',')               if (spt[4] == str(0)):
                 if spt[4] == str(0):
                     continue
                 elif (spt[4] == str(1)):
