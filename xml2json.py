@@ -4,14 +4,14 @@ import os, sys, json
 
 from xml.etree.ElementTree import ElementTree, Element
 
-XML_PATH = "Annos/test_xml"
-JSON_PATH = "voc_2007_test.json"
+XML_PATH = "Annos/trainval_xml"   '''xml文件路径'''
+JSON_PATH = "voc_2007_trainval.json"
 json_obj = {}
 images = []
 annotations = []
 categories = []
 categories_list = []
-annotation_id = 586
+annotation_id = 0 '''可改变'''
 
 
 def read_xml(in_path):
