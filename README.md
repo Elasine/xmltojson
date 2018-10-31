@@ -1,5 +1,5 @@
 # convert one file format to other file format
-* xmltojson.py
+* xml2json.py
 convert xml to json
-* txttoxml.py
+* txt2xml.py
 convert txt to xml
